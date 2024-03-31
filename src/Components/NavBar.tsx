@@ -1,7 +1,6 @@
 import { AboveNavBar } from "./AboveNavBar";
 
 import Logo from "../assets/Logo.svg";
-import { FiPhoneCall } from "react-icons/fi";
 
 function NavBar() {
   return (

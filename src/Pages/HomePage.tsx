@@ -1,9 +1,4 @@
-import { NavBar } from "../Components/NavBar";
 function HomePage() {
-  return (
-    <div>
-      <NavBar />
-    </div>
-  );
+  return <div></div>;
 }
 export { HomePage };

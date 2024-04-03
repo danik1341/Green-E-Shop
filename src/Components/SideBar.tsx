@@ -16,7 +16,6 @@ function SideBarMobile() {
         <div className="mt-4 me-3">
           <AboveNavBarMobile />
         </div>
-
         <button
           data-drawer-target="logo-sidebar"
           data-drawer-toggle="logo-sidebar"

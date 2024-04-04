@@ -7,7 +7,7 @@ function AboveNavBarLargeScreen() {
       style={{
         backgroundColor: `#333333`,
       }}
-      className=" flex-wrap justify-between mx-auto lg:mx-0 hidden lg:flex"
+      className="max-w-screen-xxl h-11 flex-wrap align-baseline justify-between mx-auto lg:mx-0 hidden lg:flex"
     >
       <div id="location-selector" className="ms-14 flex">
         <div>
@@ -17,6 +17,9 @@ function AboveNavBarLargeScreen() {
           <label htmlFor="underline_select" className="sr-only"></label>
           <select
             id="underline_select"
+            style={{
+              background: `none`,
+            }}
             className="block py-2.5 px-0 w-1/1 text-sm text-gray-500 bg-transparent  border-0 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
           >
             <option selected>Store Location</option>
@@ -33,6 +36,9 @@ function AboveNavBarLargeScreen() {
             <label htmlFor="underline_select" className="sr-only"></label>
             <select
               id="underline_select"
+              style={{
+                background: `none`,
+              }}
               className="block py-2.5 px-0 w-1/1 text-sm text-gray-500 bg-transparent border-0 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             >
               <option selected value="US">
@@ -48,6 +54,9 @@ function AboveNavBarLargeScreen() {
             <label htmlFor="underline_select" className="sr-only"></label>
             <select
               id="underline_select"
+              style={{
+                background: `none`,
+              }}
               className="block py-2.5 px-0 w-1/1 text-sm text-gray-500 bg-transparent border-0   appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
             >
               <option selected value="US">
@@ -86,16 +95,23 @@ function AboveNavBarMobile() {
             </button>
           </a>
         </div>
-        <div className="border-r"></div>
+        <div
+          style={{
+            backgroundColor: `gray`,
+          }}
+          className="border-r border-gray-500"
+        ></div>
         <div>
           <a href="/Cart">
             <button>
-              <SlHandbag className="  text-gray-500 w-5 h-5" />
+              <SlHandbag className="  text-gray-500 w-4 h-5" />
+              <span className="absolute top-7 right-2 bg-red-500 text-white px-1 text-2xs rounded-full text-xs">
+                1
+              </span>
             </button>
           </a>
         </div>
       </div>
-      {/* {card icon + like icon} */}
     </div>
   );
 }

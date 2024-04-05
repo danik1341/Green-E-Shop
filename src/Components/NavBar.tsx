@@ -7,7 +7,7 @@ function NavBar() {
     <div>
       <div>
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <a
               href="#"
               className=" items-center space-x-3 hidden lg:flex rtl:space-x-reverse"
@@ -26,7 +26,7 @@ function NavBar() {
                   Search
                 </label>
                 {/* {nav bar search bar } */}
-                <div className="relative">
+                <div className="relative mt-3">
                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg
                       className="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -75,8 +75,19 @@ function NavBar() {
                 <a href="/Cart">
                   <button>
                     <SlHandbag className="w-8 h-8 lg:transition lg:duration-500 lg:hover:scale-110  lg:hover:text-green-300" />
+                    <span className=" absolute top-24 ms-1.5 mt-1 bg-red-500 text-white px-1 text-2xs rounded-full text-xs">
+                      3
+                    </span>
                   </button>
                 </a>
+              </div>
+              <div>
+                <div>
+                  <p className="text-slate-400 text-xs">Shopping cart:</p>
+                </div>
+                <div>
+                  <p className="text-xs">$57.50</p>
+                </div>
               </div>
             </div>
             {/* {card icon + like icon} */}

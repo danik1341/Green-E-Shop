@@ -26,7 +26,7 @@ function NavBar() {
                   Search
                 </label>
                 {/* {nav bar search bar } */}
-                <div className="relative mt-3">
+                <div className="relative mt-3 mx-4 lg:mx-0">
                   <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                     <svg
                       className="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -75,7 +75,7 @@ function NavBar() {
                 <a href="/Cart">
                   <button>
                     <SlHandbag className="w-8 h-8 lg:transition lg:duration-500 lg:hover:scale-110  lg:hover:text-green-300" />
-                    <span className=" absolute top-24 ms-1.5 mt-1 bg-red-500 text-white px-1 text-2xs rounded-full text-xs">
+                    <span className=" absolute top-24 ms-1.5 bg-red-500 text-white px-1 text-2xs rounded-full text-xs">
                       3
                     </span>
                   </button>

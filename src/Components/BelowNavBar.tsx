@@ -1,7 +1,7 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { LiaPhoneVolumeSolid } from "react-icons/lia";
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function BelowNavBarLargeScreens() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -9,7 +9,7 @@ function BelowNavBarLargeScreens() {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
+  ``;
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
@@ -18,7 +18,7 @@ function BelowNavBarLargeScreens() {
       style={{
         backgroundColor: `#F2F2F2`,
       }}
-      className="flex mx-auto"
+      className="lg:buiflex mx-auto hidden"
     >
       <div className="max-w-screen-xl items-center hidden h-16 lg:flex">
         {/* {All Catagories button} */}

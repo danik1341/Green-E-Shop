@@ -1,5 +1,9 @@
 import { HiOutlineMapPin } from "react-icons/hi2";
-import ReactLoginModel from "./Modals";
+import { SideBarMobile } from "./MobileSideBar";
+import { HiUser } from "react-icons/hi";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { IoIosSearch } from "react-icons/io";
 
 function AboveNavBarLargeScreen() {
   return (
@@ -97,12 +101,83 @@ function AboveNavBarLargeScreen() {
               color: `#7A997C`,
             }}
           >
-            <ReactLoginModel />
+            <a href="/SignIn">
+              <HiUser className="w-6 h-6 mt-1.5" />
+            </a>
           </div>
         </div>
       </div>
     </div>
   );
 }
+// {Section above the nav bar for smaller screens (mobile)}
+function AboveNavBarMobile() {
+  return (
+    <div
+      style={{
+        backgroundColor: `#EDF2EE`,
+      }}
+      className="max-w-screen-xxl  h-13 flex-wrap align-baseline justify-between mx-auto lg:hidden"
+    >
+      <div>
+        <div
+          className="flex justify-between"
+          style={{
+            color: `#7A997C`,
+          }}
+        >
+          <div className="mb-1 flex">
+            <SideBarMobile />
+            <div id="search">
+              <button>
+                <div
+                  style={{
+                    padding: "0",
+                  }}
+                  className="relative flex justify-start flex-col overflow-hidden "
+                >
+                  <div className="relative mt-6 max-w-lg">
+                    <div className=" max-w-md">
+                      <form action="" className="relative w-max">
+                        <input
+                          type="search"
+                          className="peer relative z-10 h-6 w-6 cursor-pointer me-2 rounded-full bg-transparent outline-none focus:w-auto focus:cursor-text focus:mt-0.5 focus:ms-1 focus:pl-16 focus:pr-4 transition-all duration-700 border-none"
+                        />
+                        <IoIosSearch
+                          className="peer absolute font-bold inset-y-0 my-auto ms-2 h-6 w-6
+                       stroke-gray-500 transition-all duration-500 "
+                          style={{
+                            left: "0", // Initial position from the left
+                            transition: "left 0.5s ease", // Apply transition to left property
+                          }}
+                        />
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
 
-export { AboveNavBarLargeScreen };
+          {/* {search-cart-likes container} */}
+          <div className="flex mt-6 gap-3 me-3">
+            <a href="/Liked">
+              <div id="likes">
+                <IoIosHeartEmpty className="w-6 h-6  hover:text-rose-500 transition ease-in-out hover:scale-125 delay-150" />
+              </div>
+            </a>
+            <div className="border-r h-7 border-gray-400"></div>
+            <a href="/Cart">
+              <div id="cart">
+                <HiOutlineShoppingBag className="w-6 h-6 hover:text-green-500 transition ease-in-out hover:scale-125 delay-150 " />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
+  );
+}
+
+export { AboveNavBarLargeScreen, AboveNavBarMobile };

@@ -1,7 +1,16 @@
 import { useState } from "react";
-import { Sidebar } from "flowbite-react";
+import { Sidebar, Select, Label } from "flowbite-react";
 import { Transition } from "react-transition-group";
-import { HiChartPie, HiViewBoards, HiInbox, HiUser, HiX } from "react-icons/hi";
+import { HiUser, HiX } from "react-icons/hi";
+import { FaHome, FaShoppingBasket } from "react-icons/fa";
+import { MdFindInPage } from "react-icons/md";
+import { FaBloggerB } from "react-icons/fa6";
+import { FaQuestion } from "react-icons/fa";
+import { BsCurrencyDollar } from "react-icons/bs";
+import { CiLocationOn } from "react-icons/ci";
+import { HiOutlineMinusSm, HiOutlinePlusSm } from "react-icons/hi";
+import { twMerge } from "tailwind-merge";
+import Logo from "../assets/Logo.svg";
 
 function SideBarMobile() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -63,21 +72,76 @@ function SideBarMobile() {
               </div>
             </div>
             <Sidebar aria-label="MobileSideBar">
+              <Sidebar.Logo
+                className="text-black"
+                href="#"
+                img={Logo}
+                imgAlt="Ecobazar logo"
+              >
+                Ecobazar
+              </Sidebar.Logo>
               <Sidebar.Items>
                 <Sidebar.ItemGroup>
-                  <Sidebar.Item href="#" icon={HiChartPie}>
-                    Dashboard
-                  </Sidebar.Item>
-                  <Sidebar.Item
-                    href="#"
-                    icon={HiViewBoards}
-                    label="Pro"
-                    labelColor="dark"
+                  <Sidebar.Collapse
+                    icon={FaHome}
+                    label="Home"
+                    renderChevronIcon={(theme, open) => {
+                      const IconComponent = open
+                        ? HiOutlineMinusSm
+                        : HiOutlinePlusSm;
+
+                      return (
+                        <IconComponent
+                          aria-hidden
+                          className={twMerge(
+                            theme.label.icon.open[open ? "on" : "off"]
+                          )}
+                        />
+                      );
+                    }}
                   >
-                    Kanban
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                  </Sidebar.Collapse>
+                  <Sidebar.Item href="#" icon={FaShoppingBasket}>
+                    Shop
                   </Sidebar.Item>
-                  <Sidebar.Item href="#" icon={HiInbox} label="3">
-                    Inbox
+                  <Sidebar.Item href="#" icon={MdFindInPage}>
+                    Pages
+                  </Sidebar.Item>
+                  <Sidebar.Item href="#" icon={FaBloggerB}>
+                    Blog
+                  </Sidebar.Item>
+                  <Sidebar.Item href="#" icon={FaQuestion}>
+                    About Us
+                  </Sidebar.Item>
+                </Sidebar.ItemGroup>
+                <Sidebar.ItemGroup>
+                  <Sidebar.Item icon={BsCurrencyDollar}>
+                    <div className="max-w-md">
+                      <div className="block">
+                        <Label htmlFor="currency" />
+                      </div>
+                      <Select id="currency" required>
+                        <option>USD</option>
+                        <option>EURO</option>
+                      </Select>
+                    </div>
+                  </Sidebar.Item>
+                  <Sidebar.Item icon={CiLocationOn}>
+                    <div className="max-w-md">
+                      <div className="block">
+                        <Label htmlFor="currency" />
+                      </div>
+                      <Select id="currency" required>
+                        <option>USA</option>
+                        <option>Canada</option>
+                        <option>Germany</option>
+                        <option>France</option>
+                      </Select>
+                    </div>
                   </Sidebar.Item>
                 </Sidebar.ItemGroup>
               </Sidebar.Items>

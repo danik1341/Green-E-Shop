@@ -658,9 +658,9 @@ function FeaturedProductsExtension() {
           </h1>
           <div className="flex">
             <div>
-              <button className="justify-center items-center px-8 py-3 rounded-full mx-20 bg-white">
+              <button className="justify-center items-center px-10 py-2 rounded-full mx-20 bg-white text-green-400 hover:shadow-xl">
                 Shop now
-                <span>
+                <span className="absolute mt-1 ms-2 me-5">
                   <HiArrowRight />
                 </span>
               </button>

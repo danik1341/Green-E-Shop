@@ -254,16 +254,21 @@ function FeaturedProducts() {
 }
 function FeaturedProductsExtension() {
   return (
-    <div className="mt-12 flex justify-around ms-auto me-auto mx-5">
+    <div className="mt-12 flex-col flex lg:flex-row lg:gap-12  justify-around ms-auto me-auto mx-5">
       {/* {Hot deals section} */}
-      <div id="Hot-Deals-Container" className="flex-col">
+      <div
+        id="Hot-Deals-Container"
+        className="flex-col mx-6 lg:mx-0 mt-7 lg:mt-0"
+      >
         <div>
-          <h1 className="font-semibold ms-1.5">Hot Deals</h1>
+          <h1 className="font-semibold ms-1.5 text-center lg:text-left">
+            Hot Deals
+          </h1>
         </div>
         {/* {apple card} */}
         <div
           id="green-apple"
-          className="group flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
         >
           <div id="green-apple-img">
             <img
@@ -304,7 +309,7 @@ function FeaturedProductsExtension() {
         {/* {Orange card} */}
         <div
           id="orange"
-          className="group flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex my-6 px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
         >
           <div id="orange-img">
             <img src={OrangeSmallIMG} alt="orange" className="me-4 mt-3" />
@@ -341,7 +346,7 @@ function FeaturedProductsExtension() {
         {/* {Lettuce card} */}
         <div
           id="Green-Lettuce"
-          className="group flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+          className="group justify-around flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
         >
           <div id="green-lettuce-img">
             <img
@@ -382,15 +387,15 @@ function FeaturedProductsExtension() {
       </div>
       {/* {Hot deals section} */}
       {/* {best seller container} */}
-      <div id="best-seller-container">
+      <div id="best-seller-container" className=" mx-6 lg:mx-0 mt-7 lg:mt-0">
         <div>
-          <h1 className="font-bold">Best Sellers</h1>
+          <h1 className="font-bold text-center lg:text-left">Best Sellers</h1>
         </div>
         {/* {eggplant card} */}
         <div id="eggplant-card">
           <div
             id="eggplant-card"
-            className="group my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+            className="group justify-around my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
           >
             <div id="eggplant-img">
               <img
@@ -433,7 +438,7 @@ function FeaturedProductsExtension() {
         <div id="RedCapsicum-card">
           <div
             id="RedCapsicum-card"
-            className="group my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+            className="group justify-around my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
           >
             <div id="RedCapsicum-img">
               <img
@@ -476,7 +481,7 @@ function FeaturedProductsExtension() {
         <div id="RedTomato-card">
           <div
             id="RedTomato-card"
-            className="group my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+            className="group justify-around my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
           >
             <div id="RedTomato-img">
               <img
@@ -518,15 +523,15 @@ function FeaturedProductsExtension() {
       </div>
       {/* {best seller container} */}
       {/* {top rated container} */}
-      <div id="top-rated-container">
+      <div id="top-rated-container" className=" mx-6 lg:mx-0 mt-7 lg:mt-0">
         <div>
-          <h1 className="font-bold">Top Rated</h1>
+          <h1 className="font-bold text-center lg:text-left">Top Rated</h1>
         </div>
         {/* {Potato card} */}
         <div id="Potato-card">
           <div
             id="Potato-card"
-            className="group my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+            className="group justify-around my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
           >
             <div id="Potato-img">
               <img src={PotatoSmallIMG} alt="Potato" className="me-4 mt-3" />
@@ -565,7 +570,7 @@ function FeaturedProductsExtension() {
         <div id="Corn-card">
           <div
             id="Corn-card"
-            className="group my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+            className="group justify-around my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
           >
             <div id="Corn-img">
               <img src={CornSmallIMG} alt="Corn" className="me-4 mt-3" />
@@ -604,7 +609,7 @@ function FeaturedProductsExtension() {
         <div id="Cauliflower-card">
           <div
             id="Cauliflower-card"
-            className="group my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
+            className="group justify-around my-6 flex px-5 border rounded-lg lg:hover:border-green-400 lg:transition lg:hover:scale-105 lg:delay-150 lg:hover:shadow-xl"
           >
             <div id="Cauliflower-img">
               <img
@@ -648,7 +653,7 @@ function FeaturedProductsExtension() {
       {/* {Summer sale Container} */}
       <div
         id="featured-products-summer-sale-container"
-        className="mt-auto mb-auto relative"
+        className="mt-auto mb-auto ms-auto me-auto relative"
       >
         <img src={SummerSaleBG} alt="" />
         <div className="absolute mt-16 top-0 left-0 w-full h-full flex-col items-center justify-center">

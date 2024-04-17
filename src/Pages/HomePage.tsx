@@ -1,10 +1,10 @@
 import { AboveNavBarLargeScreen } from "../Components/AboveNavBar";
 import { AboveNavBarMobile } from "../Components/AboveNavBar";
-import { FeaturedProducts } from "../Components/FeaturedProducts";
 import {
-  HeroSection,
-  HeroSectionUnderCards,
-} from "../Components/HeroSectionHomePage";
+  FeaturedProducts,
+  FeaturedProductsExtension,
+} from "../Components/FeaturedProducts";
+import { HeroSection, HeroSectionUnderCards } from "../Components/HeroSection";
 import { LargeScreenNavBar } from "../Components/NavBar";
 
 function HomePage() {
@@ -16,6 +16,7 @@ function HomePage() {
       <HeroSection />
       <HeroSectionUnderCards />
       <FeaturedProducts />
+      <FeaturedProductsExtension />
     </div>
   );
 }

@@ -128,6 +128,7 @@ function AboveNavBarMobile() {
         >
           <div className="mb-1 flex">
             <SideBarMobile />
+            {/* {mobile animated search bar start} */}
             <div id="search">
               <button>
                 <div
@@ -141,13 +142,13 @@ function AboveNavBarMobile() {
                       <form action="" className="relative w-max">
                         <input
                           type="search"
-                          className="peer relative z-10 h-6 w-6 cursor-pointer me-2 rounded-full bg-transparent outline-none focus:w-auto focus:cursor-text focus:mt-0.5 focus:ms-1 focus:pl-16 focus:pr-4 transition-all duration-700 border-none"
+                          className=" relative text-black  z-10 h-6 w-6 cursor-pointer me-2 rounded-full bg-transparent outline-none focus:w-auto focus:cursor-text focus:mt-0.5 focus:ms-1 focus:pl-8 transition-all duration-700 border-none"
                         />
                         <IoIosSearch
-                          className="peer absolute font-bold inset-y-0 my-auto ms-2 h-6 w-6
-                       stroke-gray-500 transition-all duration-500 "
+                          className=" absolute font-bold inset-y-0 my-auto ms-1.5   h-6 w-6
+                      transition-all duration-500 "
                           style={{
-                            left: "0", // Initial position from the left
+                            left: "1", // Initial position from the left
                             transition: "left 0.5s ease", // Apply transition to left property
                           }}
                         />
@@ -158,8 +159,8 @@ function AboveNavBarMobile() {
               </button>
             </div>
           </div>
-
-          {/* {search-cart-likes container} */}
+          {/* {mobile animated search bar end} */}
+          {/* {cart-likes container} */}
           <div className="flex mt-6 gap-3 me-3">
             <a href="/Liked">
               <div id="likes">

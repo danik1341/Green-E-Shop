@@ -20,6 +20,7 @@ function SideBarMobile() {
 
   return (
     <>
+      {/* {Sidebar button} */}
       <button
         onClick={toggleSidebar}
         type="button"
@@ -40,7 +41,8 @@ function SideBarMobile() {
           ></path>
         </svg>
       </button>
-
+      {/* {Sidebar button} */}
+      {/* {Sidebar open animation} */}
       <Transition in={isSidebarOpen} timeout={50}>
         {(state) => (
           <div
@@ -57,6 +59,7 @@ function SideBarMobile() {
           >
             <div className="flex justify-between bg-gray-50">
               <div className="flex p-4">
+                {/* {Sidebar close button} */}
                 <button
                   onClick={closeSidebar}
                   type="button"
@@ -65,13 +68,16 @@ function SideBarMobile() {
                   <HiX className="w-6 h-6" />
                 </button>
               </div>
+              {/* {Sidebar user login button} */}
               <div className="p-4">
                 <a href="/SignIn">
                   <HiUser className="w-6 h-6 text-gray-500" />
                 </a>
               </div>
             </div>
+            {/* {Sidebar start} */}
             <Sidebar aria-label="MobileSideBar">
+              {/* {Sidebar logo} */}
               <Sidebar.Logo
                 className="text-black"
                 href="#"
@@ -80,8 +86,10 @@ function SideBarMobile() {
               >
                 Ecobazar
               </Sidebar.Logo>
+              {/* {Sidebar items start} */}
               <Sidebar.Items>
                 <Sidebar.ItemGroup>
+                  {/* {Sidebar home button & home button collapse} */}
                   <Sidebar.Collapse
                     icon={FaHome}
                     label="Home"
@@ -105,15 +113,82 @@ function SideBarMobile() {
                     <Sidebar.Item href="#">example</Sidebar.Item>
                     <Sidebar.Item href="#">example</Sidebar.Item>
                   </Sidebar.Collapse>
-                  <Sidebar.Item href="#" icon={FaShoppingBasket}>
-                    Shop
-                  </Sidebar.Item>
-                  <Sidebar.Item href="#" icon={MdFindInPage}>
-                    Pages
-                  </Sidebar.Item>
-                  <Sidebar.Item href="#" icon={FaBloggerB}>
-                    Blog
-                  </Sidebar.Item>
+                  {/* {Sidebar home button & home button collapse} */}
+                  {/* {Sidebar shop button & shop button collapse} */}
+                  <Sidebar.Collapse
+                    icon={FaShoppingBasket}
+                    label="Shop"
+                    renderChevronIcon={(theme, open) => {
+                      const IconComponent = open
+                        ? HiOutlineMinusSm
+                        : HiOutlinePlusSm;
+
+                      return (
+                        <IconComponent
+                          aria-hidden
+                          className={twMerge(
+                            theme.label.icon.open[open ? "on" : "off"]
+                          )}
+                        />
+                      );
+                    }}
+                  >
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                  </Sidebar.Collapse>
+                  {/* {Sidebar shop button & shop button collapse} */}
+                  {/* {Sidebar pages button & pages button collapse} */}
+                  <Sidebar.Collapse
+                    icon={MdFindInPage}
+                    label="Pages"
+                    renderChevronIcon={(theme, open) => {
+                      const IconComponent = open
+                        ? HiOutlineMinusSm
+                        : HiOutlinePlusSm;
+
+                      return (
+                        <IconComponent
+                          aria-hidden
+                          className={twMerge(
+                            theme.label.icon.open[open ? "on" : "off"]
+                          )}
+                        />
+                      );
+                    }}
+                  >
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                  </Sidebar.Collapse>
+                  {/* {Sidebar pages button & pages button collapse} */}
+                  {/* {Sidebar blog button & blog button collapse} */}
+                  <Sidebar.Collapse
+                    icon={FaBloggerB}
+                    label="Blog"
+                    renderChevronIcon={(theme, open) => {
+                      const IconComponent = open
+                        ? HiOutlineMinusSm
+                        : HiOutlinePlusSm;
+
+                      return (
+                        <IconComponent
+                          aria-hidden
+                          className={twMerge(
+                            theme.label.icon.open[open ? "on" : "off"]
+                          )}
+                        />
+                      );
+                    }}
+                  >
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                    <Sidebar.Item href="#">example</Sidebar.Item>
+                  </Sidebar.Collapse>
+                  {/* {Sidebar blog button & blog button collapse} */}
                   <Sidebar.Item href="#" icon={FaQuestion}>
                     About Us
                   </Sidebar.Item>
@@ -145,6 +220,7 @@ function SideBarMobile() {
                   </Sidebar.Item>
                 </Sidebar.ItemGroup>
               </Sidebar.Items>
+              {/* {Sidebar items end} */}
             </Sidebar>
           </div>
         )}

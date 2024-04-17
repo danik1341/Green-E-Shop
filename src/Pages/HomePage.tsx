@@ -1,6 +1,9 @@
 import { AboveNavBarLargeScreen } from "../Components/AboveNavBar";
 import { AboveNavBarMobile } from "../Components/AboveNavBar";
-import { HeroSection } from "../Components/HeroSectionHomePage";
+import {
+  HeroSection,
+  HeroSectionUnderCards,
+} from "../Components/HeroSectionHomePage";
 import { LargeScreenNavBar } from "../Components/NavBar";
 
 function HomePage() {
@@ -10,6 +13,7 @@ function HomePage() {
       <AboveNavBarMobile />
       <LargeScreenNavBar />
       <HeroSection />
+      <HeroSectionUnderCards />
     </div>
   );
 }

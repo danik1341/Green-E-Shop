@@ -19,18 +19,18 @@ function HeroSection() {
       >
         <div id="hero-section-img-basket">
           <img
-            className="lg:mt-32 lg:me-12 me-auto ms-auto mt-0 lg:w-full"
+            className="lg:mt-32 lg:me-12 me-auto ms-auto mt-0 lg:w-full mx-6"
             src={Basket}
             alt=""
           />
         </div>
         <div
           id="hero-section-text"
-          className="lg:mt-auto lg:mb-auto lg:text-left text-center"
+          className="lg:mt-auto lg:mb-auto lg:text-left text-center mx-6"
         >
           <div>
             <p
-              className="font-bold"
+              className="font-bold my-3"
               style={{
                 color: "#00B207",
               }}

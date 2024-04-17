@@ -7,8 +7,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
-  },
+    fontFamily: {
+      sans: ["Poppins", "Sans-serif"],
+    },
+},
   plugins: [
     require('flowbite/plugin')
   ],

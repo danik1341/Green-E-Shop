@@ -19,7 +19,7 @@ function HeroSection() {
       >
         <div id="hero-section-img-basket">
           <img
-            className="lg:mt-32 lg:me-12 me-auto ms-auto mt-0 lg:w-full mx-6"
+            className="lg:mt-32 lg:me-12 me-auto ms-auto mt-12 lg:w-full mx-6"
             src={Basket}
             alt=""
           />
@@ -69,7 +69,7 @@ function HeroSection() {
               type="button"
               className="text-white mt-5 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
             >
-              Choose plan
+              Show Now
               <svg
                 className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                 aria-hidden="true"

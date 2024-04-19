@@ -688,6 +688,7 @@ function FeaturedProductsExtension() {
 function ShopByCatagories() {
   return (
     <div
+      className="hidden lg:block"
       style={{
         backgroundColor: "rgba(242, 245, 243, 1)",
       }}

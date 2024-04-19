@@ -1,5 +1,6 @@
 import { AboveNavBarLargeScreen } from "../Components/AboveNavBar";
 import { AboveNavBarMobile } from "../Components/AboveNavBar";
+import { CatagoriesMobileScreen } from "../Components/CatagoriesMobileScreen";
 import Popup from "../Components/EmailPopUp";
 import {
   FeaturedProducts,
@@ -21,6 +22,7 @@ function HomePage() {
       <FeaturedProducts />
       <FeaturedProductsExtension />
       <ShopByCatagories />
+      <CatagoriesMobileScreen />
     </div>
   );
 }

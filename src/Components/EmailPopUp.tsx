@@ -24,7 +24,7 @@ const Popup = () => {
             </div>
             <div>
               <div>
-                <h1 className="font-bold text-5xl text-center mx-6">
+                <h1 className="font-bold text-5xl text-center mx-24">
                   Subcribe to Our
                   <br /> Newsletter
                 </h1>

@@ -4,6 +4,7 @@ import { NotFoundPage } from "./Pages/NotFound";
 import { CartPage } from "./Pages/CartPage";
 import { LikedItemsPage } from "./Pages/LikedItemsPage";
 import { SignIn } from "./Components/SignIn";
+import { SignUpPage } from "./Pages/SignUp";
 
 const Pages = () => {
   return (
@@ -13,6 +14,7 @@ const Pages = () => {
         <Route path="/Cart" element={<CartPage />} />
         <Route path="/Liked" element={<LikedItemsPage />} />
         <Route path="/SignIn" element={<SignIn />} />
+        <Route path="/SignUp" element={<SignUpPage />} />
         {/* {error page} */}
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

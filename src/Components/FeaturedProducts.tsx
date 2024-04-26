@@ -262,7 +262,7 @@ function FeaturedProducts() {
 }
 function FeaturedProductsExtension() {
   return (
-    <div className="mt-12 flex-col flex lg:flex-row lg:gap-12 ms-0 lg:ms-12  justify-around  me-auto mx-5">
+    <div className="mt-12 flex-col flex lg:flex-row lg:gap-36 ms-0 lg:ms-12  justify-around  me-auto mx-5">
       {/* {Hot deals section} */}
       <div
         id="Hot-Deals-Container"
@@ -709,7 +709,7 @@ function ShopByCatagories() {
           </button>
         </div>
       </div>
-      <div id="catagories" className="flex mx-6 justify-center gap-12">
+      <div id="catagories" className="flex mx-6 justify-center gap-24">
         {/* {Veg Catagory} */}
         <div
           id="veg-catagory"

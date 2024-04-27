@@ -24,6 +24,8 @@ import MeatCatagoryIcon from "../assets/Catagory-icons/Meat.svg";
 import DrinksCatagoryIcon from "../assets/Catagory-icons/Water and Drinks.svg";
 import SnacksCatagoryIcon from "../assets/Catagory-icons/Snacks.svg";
 // {Catagory images}
+import TrustedSourceSmallImg from "../assets/TrustedSourceSmallimg.svg";
+import TrustedSourceLargeImg from "../assets/TrustedSourceBigimg.svg";
 import { HiArrowRight } from "react-icons/hi";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { LiaCartPlusSolid } from "react-icons/lia";
@@ -495,7 +497,7 @@ function FeaturedProductsExtension() {
               <img
                 src={RedTomatoSmallIMG}
                 alt="RedTomato"
-                className="me-4 mt-3"
+                className="me-5 mt-3"
               />
             </div>
             <div id="green-lettuce-text" className="mt-5 mb-auto">
@@ -688,7 +690,7 @@ function FeaturedProductsExtension() {
 function ShopByCatagories() {
   return (
     <div
-      className="hidden lg:block"
+      className="hidden lg:block p-12"
       style={{
         backgroundColor: "rgba(242, 245, 243, 1)",
       }}
@@ -709,7 +711,7 @@ function ShopByCatagories() {
           </button>
         </div>
       </div>
-      <div id="catagories" className="flex mx-6 justify-center gap-24">
+      <div id="catagories" className="flex mx-6 justify-around">
         {/* {Veg Catagory} */}
         <div
           id="veg-catagory"
@@ -831,7 +833,34 @@ function ShopByCatagories() {
         </div>
         {/* {Snacks Catagory} */}
       </div>
+      <div></div>
     </div>
   );
 }
-export { FeaturedProducts, FeaturedProductsExtension, ShopByCatagories };
+function ShopByCatagoriesExt() {
+  return (
+    <div>
+      <div id="trusted-sources-img-container" className="flex mt-12">
+        <div id="img-1">
+          <img src={TrustedSourceSmallImg} alt="" />
+        </div>
+        <div id="img-2">
+          <img src={TrustedSourceLargeImg} alt="" />
+        </div>
+      </div>
+      <div id="trusted-sources-text">
+        <div>
+          <p>
+            100% Trusted <br /> Organic Food Store
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+export {
+  FeaturedProducts,
+  FeaturedProductsExtension,
+  ShopByCatagories,
+  ShopByCatagoriesExt,
+};

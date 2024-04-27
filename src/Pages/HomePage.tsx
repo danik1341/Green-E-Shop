@@ -6,6 +6,7 @@ import {
   FeaturedProducts,
   FeaturedProductsExtension,
   ShopByCatagories,
+  ShopByCatagoriesExt,
 } from "../Components/FeaturedProducts";
 import { HeroSection, HeroSectionUnderCards } from "../Components/HeroSection";
 import { LargeScreenNavBar } from "../Components/NavBar";
@@ -23,6 +24,7 @@ function HomePage() {
       <FeaturedProductsExtension />
       <ShopByCatagories />
       <CatagoriesMobileScreen />
+      <ShopByCatagoriesExt />
     </div>
   );
 }

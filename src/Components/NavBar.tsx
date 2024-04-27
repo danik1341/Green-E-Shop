@@ -45,10 +45,14 @@ function LargeScreenNavBar() {
       {/* {large-nav-bar-logo-container} */}
       <div className="flex mt-3">
         <div>
-          <img src={Logo} alt="Ecobazar logo" />
+          <a href="/">
+            <img src={Logo} alt="Ecobazar logo" />
+          </a>
         </div>
         <div>
-          <p className=" text-3xl ms-2">EcoBazar</p>
+          <a href="/">
+            <p className=" text-3xl ms-2">EcoBazar</p>
+          </a>
         </div>
       </div>
       {/* {phone large nav-bar container} */}
